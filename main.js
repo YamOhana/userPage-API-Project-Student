@@ -23,10 +23,11 @@ $("#Display").on("click", function () {
 $("#save").click(function () {
     user.saveUserData()
     renderer.render(user.data)
+    
 })
 
 
-$(".shiftdown-content").on("click",".saved-names", function() {
+$("#storage").on("click",".saved-names", function() {
     console.log("clicked")
     let name = $(this).text()
     console.log(name)
